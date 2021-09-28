@@ -13,27 +13,37 @@ html {
   --very-light-grey: #f9f9f9;
   --light-grey: #f2f2f2;
   --grey: #ccc;
+  height: 100vh;
+  width: 100vw;
+  font-size: 15px;
 }
 
 body {
-  height: 100vh;
-  max-width: 100vw;
+  min-height: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: arial, sans-serif;
-  font-size: 15px;
+  text-align: center;
   color: var(--font-principal);
-}
-
-ul {
-  list-style-type: none;
 }
 
 ul, .container, form, .submit-btns {
   display: flex;
+  align-items: center
+}
+
+.container, form {
+  justify-content: space-around;
+}
+
+.submit-btns {
   justify-content: center;
-  align-items: center;
+}
+
+ul {
+  list-style-type: none;
 }
 
 ul li {
@@ -54,9 +64,14 @@ nav {
   margin: 1rem;
 }
 
+.nav {
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
 nav li {
   font-size: 0.75rem;
-  margin: 0 0.4em;
+  margin: 0.4em;
 }
 
 nav li a {
@@ -165,7 +180,7 @@ nav .connect {
 
 form {
   flex-direction: column;
-  min-width: 300px;
+  min-width: 250px;
   width: 90vw;
   max-width: 600px;
 }
@@ -173,7 +188,7 @@ form {
 .searchbar {
   width: 100%;
   height: 2.5rem;
-  margin: 2em;
+  margin: 2em 0;
   position: relative;
 }
 
@@ -264,7 +279,7 @@ form {
 
 .language {
   font-size: 0.8em;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .language a {
@@ -274,10 +289,6 @@ form {
 
 .sml-txt {
   font-size: 0.7em;
-}
-
-.nav {
-  justify-content: right;
 }
 
 footer {
@@ -307,4 +318,22 @@ footer .info {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 0.7em;
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 12px;
+  }
+
+  .nav {
+    justify-content: space-around;
+  }
+
+  nav .hamburger {
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
 }
