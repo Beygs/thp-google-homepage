@@ -27,11 +27,28 @@ body {
   font-family: arial, sans-serif;
   text-align: center;
   color: var(--font-principal);
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--grey);
+  background-clip: padding-box;
+  border-radius: 2rem;
+  border: 4px solid transparent;
 }
 
 ul, .container, form, .submit-btns {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .container, form {
@@ -78,58 +95,81 @@ nav li a {
   font-size: inherit;
 }
 
-nav .hamburger {
+.hamburger {
+  position: relative;
+}
+
+nav .hamburger-closed {
   height: 1.2rem;
   cursor: pointer;
   margin: 0 2rem;
 }
 
-nav .hamburger rect {
+nav .hamburger-opened {
+  position: absolute;
+  top: 2.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 20rem;
+  overflow: auto;
+  border: solid var(--grey) 1px;
+  border-radius: 1rem;
+  background-color: white;
+  z-index: 999;
+}
+
+nav .hamburger-opened img {
+  height: 3rem;
+  margin: 1rem 0.5rem;
+}
+
+nav .hamburger-closed rect {
   fill: var(--light-grey);
 }
 
-nav .hamburger {
+nav .hamburger-closed {
   transform: rotate(0);
   transition: all 300ms ease;
 }
 
-nav .hamburger:hover {
+nav .hamburger-closed:hover {
   transform: rotate(90deg);
 }
 
-nav .hamburger:hover .r1 {
+nav .hamburger-closed:hover .r1 {
   fill: var(--violet);
 }
 
-nav .hamburger:hover .r2 {
+nav .hamburger-closed:hover .r2 {
   fill: var(--kelly-green);
 }
 
-nav .hamburger:hover .r3 {
+nav .hamburger-closed:hover .r3 {
   fill: var(--violet);
 }
 
-nav .hamburger:hover .r4 {
+nav .hamburger-closed:hover .r4 {
   fill: var(--kelly-green);
 }
 
-nav .hamburger:hover .r5 {
+nav .hamburger-closed:hover .r5 {
   fill: var(--violet);
 }
 
-nav .hamburger:hover .r6 {
+nav .hamburger-closed:hover .r6 {
   fill: var(--kelly-green);
 }
 
-nav .hamburger:hover .r7 {
+nav .hamburger-closed:hover .r7 {
   fill: var(--violet);
 }
 
-nav .hamburger:hover .r8 {
+nav .hamburger-closed:hover .r8 {
   fill: var(--kelly-green);
 }
 
-nav .hamburger:hover .r9 {
+nav .hamburger-closed:hover .r9 {
   fill: var(--violet);
 }
 
@@ -215,27 +255,6 @@ form {
 .searchbar .micro {
   right: 0;
   cursor: pointer;
-}
-
-.autocomplete-container {
-  width: 100%;
-  border: solid 1px var(--grey);
-  border-top: none;
-  border-radius: 0 0 2rem 2rem;
-  /* display: none; */
-  position: absolute;
-  background-color: white;
-}
-
-.autocomplete ul {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-}
-
-.autocomplete li {
-  margin: 0.8em 0 0.8em 3.5em;
 }
 
 #searchbar-bar {
@@ -329,7 +348,7 @@ footer .info {
     justify-content: space-around;
   }
 
-  nav .hamburger {
+  nav .hamburger-closed {
     margin: 0;
   }
 

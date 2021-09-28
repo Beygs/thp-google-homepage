@@ -12,19 +12,39 @@
     <ul class="nav">
       <li><a href="https://mail.google.com/mail/&ogbl" target="_blank">Gmail</a></li>
       <li><a href="https://www.google.fr/imghp?hl=fr&ogbl" target="_blank">Images</a></li>
-      <li class="hamburger">
-        <svg width="20" height="20" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect class="r9" x="118" y="118" width="49" height="49" rx="10"/>
-          <rect class="r8" x="59" y="118" width="49" height="49" rx="10"/>
-          <rect class="r7" y="118" width="49" height="49" rx="10"/>
-          <rect class="r6" x="118" y="59" width="49" height="49"/>
-          <rect class="r5" x="59" y="59" width="49" height="49" rx="10"/>
-          <rect class="r4" y="59" width="49" height="49" rx="10"/>
-          <rect class="r3" x="118" width="49" height="49" rx="10"/>
-          <rect class="r2" x="59" width="49" height="49" rx="10"/>
-          <rect class="r1" width="49" height="49" rx="10"/>
-        </svg>
-      </li>
+      <div class="hamburger">
+        <li class="hamburger-closed">
+          <svg width="20" height="20" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="r9" x="118" y="118" width="49" height="49" rx="10"/>
+            <rect class="r8" x="59" y="118" width="49" height="49" rx="10"/>
+            <rect class="r7" y="118" width="49" height="49" rx="10"/>
+            <rect class="r6" x="118" y="59" width="49" height="49"/>
+            <rect class="r5" x="59" y="59" width="49" height="49" rx="10"/>
+            <rect class="r4" y="59" width="49" height="49" rx="10"/>
+            <rect class="r3" x="118" width="49" height="49" rx="10"/>
+            <rect class="r2" x="59" width="49" height="49" rx="10"/>
+            <rect class="r1" width="49" height="49" rx="10"/>
+          </svg>
+        </li>
+        <div class="hamburger-opened" style="display: none">
+          <li>
+            <img src="./images/drink.png" alt="">
+            <img src="./images/ice-cream.png" alt="">
+            <img src="./images/lighthouse.png" alt="">
+            <img src="./images/luggage.png" alt="">
+            <img src="./images/summer.png" alt="">
+            <img src="./images/sun-umbrella.png" alt="">
+            <img src="./images/sunglasses.png" alt="">
+            <img src="./images/boat" alt="">
+            <img src="./images/coconut-drink.png" alt="">
+            <img src="./images/megaphone.png" alt="">
+            <img src="./images/surfboard.png" alt="">
+            <img src="./images/sunset.png" alt="">
+            <img src="./images/sunbed.png" alt="">
+            <img src="./images/flipflops.png" alt="">
+          </li>
+        </div>
+      </div>
       <li><button class="connect">Se connecter</button></li>
     </ul>
   </nav>
@@ -84,5 +104,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
