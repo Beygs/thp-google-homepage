@@ -190,7 +190,11 @@ form {
 .searchbar .cross {
   right: 2rem;
   cursor: pointer;
-  /* display: none; */
+  display: none;
+}
+
+.searchbar:focus-within .cross {
+  display: inline-block;
 }
 
 .searchbar .micro {
