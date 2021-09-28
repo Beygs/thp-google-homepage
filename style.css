@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --coral: hsl(355, 100%, 67%);
+  --yellow: hsl(51, 90%, 57%);
+  --violet:	hsl(254, 64%, 65%);
+  --kelly-green: hsl(76, 70%, 50%);
+  --font-principal: #353535;
+  --very-light-grey: #f9f9f9;
+  --light-grey: #f2f2f2;
+  --grey: #ccc;
+}
+
+body {
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  color: var(--font-principal);
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, .container, form, .submit-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  margin: 0 1em;
+}
+
+a {
+  color: var(--font-principal);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  margin: 1rem;
+}
+
+nav li {
+  font-size: 0.75rem;
+  margin: 0 0.4em;
+}
+
+nav li a {
+  font-size: inherit;
+}
+
+nav .hamburger {
+  height: 1.2rem;
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+nav .hamburger rect {
+  fill: var(--light-grey);
+}
+
+nav .hamburger {
+  transform: rotate(0);
+  transition: all 300ms ease;
+}
+
+nav .hamburger:hover {
+  transform: rotate(90deg);
+}
+
+nav .hamburger:hover .r1 {
+  fill: var(--violet);
+}
+
+nav .hamburger:hover .r2 {
+  fill: var(--kelly-green);
+}
+
+nav .hamburger:hover .r3 {
+  fill: var(--violet);
+}
+
+nav .hamburger:hover .r4 {
+  fill: var(--kelly-green);
+}
+
+nav .hamburger:hover .r5 {
+  fill: var(--violet);
+}
+
+nav .hamburger:hover .r6 {
+  fill: var(--kelly-green);
+}
+
+nav .hamburger:hover .r7 {
+  fill: var(--violet);
+}
+
+nav .hamburger:hover .r8 {
+  fill: var(--kelly-green);
+}
+
+nav .hamburger:hover .r9 {
+  fill: var(--violet);
+}
+
+nav .connect {
+  background-color: var(--violet);
+  padding: 0.8em 1.4em;
+  border-radius: 0.3em;
+  border: none;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -0.15em;
+  margin: 0.2em;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo .l1 {
+  color: var(--violet);
+}
+
+.logo .l2 {
+  color: var(--coral);
+}
+
+.logo .l3 {
+  color: var(--yellow);
+}
+
+.logo .l4 {
+  color: var(--violet);
+}
+
+.logo .l5 {
+  color: var(--kelly-green);
+}
+
+.logo .l6 {
+  color: var(--coral);
+}
+
+form {
+  flex-direction: column;
+  min-width: 300px;
+  width: 90vw;
+  max-width: 600px;
+}
+
+.searchbar {
+  width: 100%;
+  height: 2.5rem;
+  margin: 2em;
+  position: relative;
+}
+
+.searchbar img {
+  height: 1.3em;
+  position: absolute;
+  margin: 0.7em 1em;
+}
+
+.searchbar .glass {
+  left: 0;
+}
+
+.searchbar .cross {
+  right: 2rem;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.searchbar .micro {
+  right: 0;
+  cursor: pointer;
+}
+
+.autocomplete-container {
+  width: 100%;
+  border: solid 1px var(--grey);
+  border-top: none;
+  border-radius: 0 0 2rem 2rem;
+  /* display: none; */
+  position: absolute;
+  background-color: white;
+}
+
+.autocomplete ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.autocomplete li {
+  margin: 0.8em 0 0.8em 3.5em;
+}
+
+#searchbar-bar {
+  width: 100%;
+  height: 100%;
+  padding: 1em 3.5em;
+  outline: none;
+  border-radius: 2rem;
+  border: solid 1px var(--grey);
+  background-color: transparent;
+}
+
+#searchbar-bar:hover, #searchbar-bar:focus {
+  outline: 0;
+  box-shadow: var(--light-grey) 0 0 2px 2px;
+}
+
+.submit-btns {
+  height: 4.5em;
+  width: 100%;
+}
+
+.submit-btns input {
+  /* height: 1em; */
+  width: 30%;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 0.5em;
+  margin: auto 0.5em;
+  background-color: var(--very-light-grey);
+  color: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.submit-btns input:hover {
+  color: #000;
+  box-shadow: var(--light-grey) 0 2px 3px 0.5px;
+  border: solid 0.5px var(--light-grey);
+}
+
+.language {
+  font-size: 0.8em;
+  margin: 2rem;
+}
+
+.language a {
+  color: var(--violet);
+  cursor: not-allowed;
+}
+
+.sml-txt {
+  font-size: 0.7em;
+}
+
+.nav {
+  justify-content: right;
+}
+
+footer {
+  width: 100%;
+  height: 220px;
+  background-color: var(--light-grey);
+}
+
+footer .country {
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+
+footer .country p {
+  margin: 2em;
+}
+
+footer hr {
+  border: none;
+  border-top: var(--grey) 0.1px solid;
+}
+
+footer .info {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 0.7em;
+}
