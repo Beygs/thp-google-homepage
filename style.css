@@ -95,8 +95,18 @@ nav li a {
   font-size: inherit;
 }
 
+.close-hamburger {
+  z-index: 997;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
 .hamburger {
   position: relative;
+  z-index: 998;
 }
 
 nav .hamburger-closed {
@@ -188,10 +198,15 @@ nav .connect {
   font-weight: 600;
   letter-spacing: -0.15em;
   margin: 0.2em;
+  transition: all 300ms ease;
 }
 
 .logo:hover {
   text-decoration: none;
+}
+
+.logo:hover {
+  letter-spacing: 0;
 }
 
 .logo .l1 {
