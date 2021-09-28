@@ -15,6 +15,6 @@ Bonne correction !
 
 ### Screenshot et Live Site
 
-![](./screenshot.png)
+![](./images/screenshot.png)
 
 [Live Site URL](https://blissful-babbage-7d9f31.netlify.app/)
