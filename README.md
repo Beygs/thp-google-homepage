@@ -15,6 +15,6 @@ Bonne correction !
 
 ### Screenshot et Live Site
 
-![](./images/screenshot.png)
+[Accéder au site web](https://infallible-fermi-db5377.netlify.app/)
 
-[Live Site URL](https://infallible-fermi-db5377.netlify.app/)
+![](./images/screenshot.png)
